@@ -3,5 +3,9 @@ public class HealthProfessional {
     private String name;
     private String hospitalDepartment;
 
+    public HealthProfessional () {
+        
+    }
+
 }
 
