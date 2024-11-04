@@ -13,5 +13,11 @@ public class HealthProfessional {
         this.hospitalDepartment = hospitalDepartment;
     }
 
+    public void printAllInstanceVariables () {
+        System.out.println("ID- " + id);
+        System.out.println("Name- " + name);
+        System.out.println("Department- " + hospitalDepartment);
+    }
+
 }
 
