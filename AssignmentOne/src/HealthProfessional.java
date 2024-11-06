@@ -25,11 +25,24 @@ public class HealthProfessional {
 
 }
 
+//Child Class
 class GeneralPractitioner extends HealthProfessional {
     private String gpType;
+
+    //Default Constructor
+    public GeneralPractitioner () {
+        super();
+    }
 }
 
+//Child Class
 class Specialist extends HealthProfessional {
     private String specialistType;
+
+    //Default Constructor
+    public Specialist () {
+        super();
+    }
+
 }
 
