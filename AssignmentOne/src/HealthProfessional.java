@@ -20,7 +20,7 @@ public class HealthProfessional {
     public void printAllInstanceVariables () {
         System.out.println("ID- " + id);
         System.out.println("Name- " + name);
-        System.out.println("Department- " + hospitalLocation);
+        System.out.println("Location- " + hospitalLocation);
     }
 
     //Create Objects of GP and Specialist
@@ -31,6 +31,19 @@ public class HealthProfessional {
 
         Specialist SP1 = new Specialist (11, "Kim", "Coolangatta", "Cardiologist");
         Specialist SP2 = new Specialist (22, "Park", "Suerfers Paradise", "Dermatologist");
+
+        //Print GP and Specialist
+        GP1.printAllInstanceVariables();
+        System.out.println("------------------------------");
+        GP2.printAllInstanceVariables();
+        System.out.println("------------------------------");
+        GP3.printAllInstanceVariables();
+        System.out.println("------------------------------");
+
+        SP1.printAllInstanceVariables();
+        System.out.println("------------------------------");
+        SP2.printAllInstanceVariables();
+        System.out.println("------------------------------");
     }
 }
 
