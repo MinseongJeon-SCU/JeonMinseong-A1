@@ -33,6 +33,12 @@ class GeneralPractitioner extends HealthProfessional {
     public GeneralPractitioner () {
         super();
     }
+
+    //Second constructor that initialises all the instance variables
+    public GeneralPractitioner (int id, String name, String hospitalDepartment, String gpType) {
+        super(id,name,hospitalDepartment);
+        this.gpType = gpType;
+    }
 }
 
 //Child Class
@@ -42,6 +48,12 @@ class Specialist extends HealthProfessional {
     //Default Constructor
     public Specialist () {
         super();
+    }
+
+    //Second constructor that initialises all the instance variables
+    public Specialist (int id, String name, String hospitalDepartment, String specialistType) {
+        super(id,name,hospitalDepartment);
+        this.specialistType = specialistType;
     }
 
 }
