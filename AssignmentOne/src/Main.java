@@ -22,15 +22,17 @@ public class Main {
 
     //Method for cancel Booking
     public static void cancelBooking(int patientMobile) {
+        boolean find = false;  
         for (Appointment appointments : appointment) {
-            if (appointments.getMobileNumber() == (patientMobile)) {
+            if (appointments.getMobileNumber() == patientMobile) {
                 appointment.remove(appointments);
                 System.out.println("Booking has been canceled " + patientMobile);
-                break;
+                find = true;  
+                break; 
             }
-            else{
-                System.out.println("Cannot find patient mobile Number " + patientMobile);
-            }
+        }
+        if (!find) {
+            System.out.println("Cannot find patient mobile Number " + patientMobile);
         }
     }
 
@@ -67,6 +69,7 @@ public class Main {
         
         //Cancel Booking
         cancelBooking(4444);
+        cancelBooking(55554);
         System.out.println("------------------------------");
 
         //Print updated booking
