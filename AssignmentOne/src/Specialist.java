@@ -15,6 +15,6 @@ public class Specialist extends HealthProfessional {
     @Override
     public void printAllInstanceVariables() {
         super.printAllInstanceVariables();
-        System.out.println("Specialist type - " + specialistType);
+        System.out.println("Specialist Details  - " + specialistType);
     }
 }
