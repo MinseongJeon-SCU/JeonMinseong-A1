@@ -6,7 +6,7 @@ public class Appointment {
 
     //Default Constructor
     public Appointment() {
-
+        
     }
 
     public Appointment(String patientName, int patientMobileNumber, String preferredTimeSlot, HealthProfessional selectedDoctor) {
@@ -22,5 +22,9 @@ public class Appointment {
         System.out.println("Preferred Time Slot - " + preferredTimeSlot);
         System.out.println("Selected Doctor - " + selectedDoctor);
         selectedDoctor.printAllInstanceVariables();
+    }
+     //Get MobileNumber for deleting
+    public int getMobileNumber(){
+        return patientMobileNumber;
     }
 }
