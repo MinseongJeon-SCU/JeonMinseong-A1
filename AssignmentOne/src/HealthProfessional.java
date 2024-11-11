@@ -22,7 +22,7 @@ public class HealthProfessional {
         System.out.println("Name- " + name);
         System.out.println("Location- " + hospitalLocation);
     }
-    
+
 }
 
 

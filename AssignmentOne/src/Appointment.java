@@ -16,11 +16,11 @@ public class Appointment {
         this.selectedDoctor = selectedDoctor;
     }
 
-    public void printAllInstanceVariables () {
+    public void printAppointment() {
         System.out.println("Patient Name - " + patientName);
         System.out.println("Patient Mobile Number - " + patientMobileNumber);
         System.out.println("Preferred Time Slot - " + preferredTimeSlot);
         System.out.println("Selected Doctor - " + selectedDoctor);
+        selectedDoctor.printAllInstanceVariables();
     }
-
 }
