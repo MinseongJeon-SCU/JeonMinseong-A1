@@ -9,6 +9,7 @@ public class Appointment {
         
     }
 
+    //Second constructor that initialises all the instance variables
     public Appointment(String patientName, int patientMobileNumber, String preferredTimeSlot, HealthProfessional selectedDoctor) {
         this.patientName = patientName;
         this.patientMobileNumber = patientMobileNumber;
@@ -16,6 +17,7 @@ public class Appointment {
         this.selectedDoctor = selectedDoctor;
     }
 
+    //Method for printing
     public void printAppointment() {
         System.out.println("Patient Name - " + patientName);
         System.out.println("Patient Mobile Number - " + patientMobileNumber);
@@ -23,7 +25,7 @@ public class Appointment {
         System.out.println("Selected Doctor - " + selectedDoctor);
         selectedDoctor.printAllInstanceVariables();
     }
-     //Get MobileNumber for deleting
+     //Get MobileNumber for deleting patient from the appointment list
     public int getMobileNumber(){
         return patientMobileNumber;
     }

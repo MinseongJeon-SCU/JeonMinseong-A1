@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 public class Main {
+    //ArrayList
     static ArrayList<Appointment> appointment = new ArrayList<>();
     public static void createAppointment(String patientName, int patientMobileNumber, String preferredTimeSlot, HealthProfessional selectedDoctor ){
         Appointment newAppointment = new Appointment(patientName, patientMobileNumber, preferredTimeSlot, selectedDoctor);
@@ -7,17 +8,19 @@ public class Main {
     }
     
     //Method for displaying existing appointment
-    public static void  printExistingAppointments() {
+    public static void printExistingAppointments() {
         if (appointment.isEmpty()){
             System.out.println("There is no appointment");
         }
         else {
             for (Appointment appointmentList : appointment){
                 appointmentList.printAppointment();
+                System.out.println("------------------------------");
             }
         }
     }
 
+    //Method for cancel Booking
     public static void cancelBooking(int patientMobile) {
         for (Appointment appointments : appointment) {
             if (appointments.getMobileNumber() == (patientMobile)) {
@@ -46,18 +49,27 @@ public class Main {
         System.out.println("------------------------------");
         GP3.printAllInstanceVariables();
         System.out.println("------------------------------");
-
+    
         SP1.printAllInstanceVariables();
         System.out.println("------------------------------");
         SP2.printAllInstanceVariables();
         System.out.println("------------------------------");
+        
 
+        //Make Appointments
+        createAppointment("Ishan", 1111, "10am", GP1);
+        createAppointment("Minseong" ,2222, "11am",GP2);
+        createAppointment("Jeehwan", 3333, "12pm", SP1);
+        createAppointment("Minyeong", 4444, "1pm", SP2);
         
-        createAppointment("Ishan", 1111, "10am",GP1);
-        createAppointment("Minseong" ,2222, "10am",GP2);
+        //Print Existing Appointments
+        printExistingAppointments();
         
-        cancelBooking(1111);
-        cancelBooking(6666);
+        //Cancel Booking
+        cancelBooking(4444);
+        System.out.println("------------------------------");
+
+        //Print updated booking
         printExistingAppointments();
     }    
 }
