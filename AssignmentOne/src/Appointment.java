@@ -25,8 +25,9 @@ public class Appointment {
         System.out.println("Selected Doctor - " + selectedDoctor);
         selectedDoctor.printAllInstanceVariables();
     }
-     //Get MobileNumber for deleting patient from the appointment list
-    public int getMobileNumber(){
+
+    //Method for returning the patient's mobile number, which can be used to cancel booking
+     public int getMobileNumber(){
         return patientMobileNumber;
     }
 }

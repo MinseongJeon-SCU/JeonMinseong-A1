@@ -37,6 +37,9 @@ public class Main {
     }
 
      public static void main(String[] args) {
+
+        System.out.println("Part 3 Result------------------------------");
+        //Objects
         GeneralPractitioner GP1 = new GeneralPractitioner (1, "Minseong", "Brisbane", "Mental Health");
         GeneralPractitioner GP2 = new GeneralPractitioner(2, "Jisung", "Gold Coast", "Vaccination");
         GeneralPractitioner GP3 = new GeneralPractitioner(3, "Chanho", "Bilinga", "Family Planning");
@@ -57,7 +60,7 @@ public class Main {
         SP2.printAllInstanceVariables();
         System.out.println("------------------------------");
         
-
+        System.out.println("Part 5 Result------------------------------");
         //Make Appointments
         createAppointment("Ishan", 1111, "10am", GP1);
         createAppointment("Minseong" ,2222, "11am",GP2);
